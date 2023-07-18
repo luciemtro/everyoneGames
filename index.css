@@ -1,3 +1,29 @@
+.game-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  gap: 20px;
+}
+.game-card-list .card {
+  border: solid 2px black;
+  max-width: 300px;
+  min-height: 400px;
+  overflow: hidden;
+}
+.game-card-list .card .containerImageCard .imageCard {
+  width: 100%;
+}
+
+nav {
+  height: 100px;
+  background-color: black;
+}
+nav i {
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+}
+
 * {
   padding: 0;
   margin: 0;
