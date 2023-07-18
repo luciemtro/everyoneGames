@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const NavTop = () => {
     return(
  
         <nav> 
-            <i class="fa-solid fa-house"></i>
+            <Link to="/"><i class="fa-solid fa-house"></i></Link>         
         </nav>
 
     )
