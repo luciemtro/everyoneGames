@@ -1,20 +1,70 @@
-.game-card-list{
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    gap: 20px;
-    .card{
-        border: solid 2px black;
-        max-width: 300px;
-        min-height: 400px;
-        overflow: hidden;
-        .containerImageCard{
-            .imageCard {
-                width: 100%;
-            }
-        }
-    }  
+
+
+.filter{
+    height: 80px;
+    position: relative;
+    z-index: 2;
+    @include display (flex, row, center, center);
+    background-color: rgba(1, 0, 8, 0.753);
+    i{
+        padding: 10px;
+        color: white;
+        font-size: 1.5rem;
+    }
+    input{
+        padding: 10px;
+        width: 300px;
+        background-color: rgba(1, 0, 8, 0.932);
+        border-radius: 20px;
+        color: white;
+        font-size: 1.1rem;
+    }
+    select{
+        padding: 10px 20px;
+        margin: 15px;
+        background-color: rgba(1, 0, 8, 0.932);
+        color: white;
+        font-size: 1.1rem;
+    }
 }
+
+
+.buttonList{
+    display: flex;
+    .category-buttons{
+        @include display (flex, column, top, center);
+        position: relative;
+        z-index: 2;
+    }
+    .game-card-list{
+        @include display (flex, row, center, center);
+        flex-wrap: wrap;
+        width: 90%;
+        padding: 20px;
+        gap: 20px;
+        max-height: 90vh; /* Hauteur maximale de 100vh pour le contenu */
+        overflow-y: auto; /* Active le défilement vertical si le contenu dépasse la hauteur de l'écran */
+        .card{
+            z-index: 2;
+            background-color: rgba(1, 0, 8, 0.753);
+            color: white;
+            max-width: 320px;
+            min-height: 400px;
+            overflow: hidden;
+            border-radius: 20px;
+            position: relative;
+            .containerImageCard{
+                .imageCard {
+                    width: 100%;
+                }
+            }
+        }  
+    }
+    
+}
+
+
+
 
 
 

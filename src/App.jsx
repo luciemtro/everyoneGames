@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Filter from './Filter';
 import GameCardList from './GameCardList';
-import SingleCard from './Pages/SingleCard';
+import SingleCard from './Pages/SingleCardPage';
 import NavTop from './NavTop'
 import { fetchGames } from './API';
 
@@ -21,6 +21,7 @@ const App = () => {
       // Appel à l'API pour récupérer la liste des jeux
       const gameList = await fetchGames();
       setGames(gameList);
+
     };
 
     fetchData();
@@ -48,19 +49,16 @@ const App = () => {
 
   return (
     <Router>
-      <div>
+      <div className="contain">
         <NavTop />
-        {/* Composant Filter avec les fonctions de gestion des filtres en tant que props */}
-        <Switch>
-          {/* Route pour la liste des jeux */}
-          <Route exact path="/">
         <Filter
           onPlatformFilter={handlePlatformFilter}
           onGenreFilter={handleGenreFilter}
           onDateFilter={handleDateFilter}
           onSearchFilter={handleSearchFilter}
         />
-
+        <Switch>
+          <Route exact path="/">
             <GameCardList
               games={games}
               filteredPlatform={filteredPlatform}
@@ -69,7 +67,6 @@ const App = () => {
               searchTerm={searchTerm}
             />
           </Route>
-          {/* Route pour la page unique */}
           <Route path="/game/:id">
             <SingleCard />
           </Route>

@@ -72,7 +72,7 @@ const GameCardList = ({ filteredPlatform, filteredGenre, filteredDate, searchTer
 
   return (
  
-    <section>
+    <section className="buttonList">
       <div className="category-buttons">
         <button onClick={() => handleSortByCategory('all')}>Tout les jeux</button>
         <button onClick={() => handleSortByCategory('top-rated')}>Les mieux notés</button>

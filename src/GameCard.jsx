@@ -25,10 +25,10 @@ const GameCard = ({ game }) => {
       {/* Affichage de la date de sortie du jeu */}
       <div>{game.released}</div>
       {/* Affichage du nombre d'ajouts */}
-      <div className="rating">{game.rating}/5</div>
-      <div className="added">+{game.added} Downloads</div>
-      <Link to={`/game/${game.id}`} className="readmore-button">
-        Readmore
+      <div className="rating">{game.rating}/5 <i class="fa-solid fa-star"></i></div>
+      <div className="added">+{game.added} Téléchargements </div>
+      <Link to={`/game/${game.id}`} >
+        <button className="readmore-button">Description</button>
       </Link>
     </div>
   );

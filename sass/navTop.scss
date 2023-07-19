@@ -1,9 +1,13 @@
 nav{
-    height: 100px;
-    background-color: black;
+    height: 60px;
+    background-color: rgba(1, 0, 8, 0.753);
+    position: relative;
+    z-index: 2;
+
     i{
-        font-size: 50px;
+        font-size: 40px;
         color: white;
         cursor: pointer;
+        padding: 20px;
     }
 }

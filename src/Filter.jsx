@@ -39,9 +39,10 @@ const Filter = ({ onPlatformFilter, onGenreFilter, onDateFilter, onSearchFilter}
 
   return (
     <div className="filter">
+      <i class="fa-solid fa-magnifying-glass"></i>
         <input
         type="text"
-        placeholder="Rechercher un jeu..."
+        placeholder="Rechercher un jeu... "
         value={searchTerm}
         onChange={handleSearchChange}
         />
