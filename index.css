@@ -140,6 +140,10 @@ h3 {
   font-size: 1.8rem;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
 body {
   max-height: 100vh;
   background-image: url("/images/cyber.jpg");

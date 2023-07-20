@@ -37,6 +37,12 @@ const SingleCard = () => {
         <p>updated {gameData.updated}</p>
         <p>twitch_count {gameData.twitch_count}</p>
         <p>suggestions_count {gameData.suggestions_count}</p>
+        <p>description_raw {gameData.description_raw}</p>
+
+
+        
+        
+
       </div>
     </div>
   );
