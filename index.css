@@ -82,7 +82,7 @@ button {
   background-color: rgba(1, 0, 8, 0.753);
   color: white;
   max-width: 320px;
-  min-height: 400px;
+  min-height: 500px;
   overflow: hidden;
   border-radius: 20px;
   position: relative;
@@ -104,6 +104,28 @@ nav i {
   padding: 20px;
 }
 
+.containerCardSingle {
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+.containerCardSingle .containerCardSingle2 {
+  padding: 5%;
+  width: 80%;
+  background-color: rgba(1, 0, 8, 0.753);
+  border-radius: 30px;
+  color: white;
+}
+.containerCardSingle .containerCardSingle2 .containerImageCardSingle .imageCardSingle {
+  width: 500px;
+  border-radius: 30px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -111,6 +133,11 @@ nav i {
   text-transform: none;
   list-style: none;
   font-family: "Goldman", cursive;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.8rem;
 }
 
 body {

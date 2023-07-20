@@ -1,0 +1,22 @@
+.containerCardSingle{
+    width: 100%;
+    padding: 5%;
+    @include display (flex, row, center, center);
+    position: relative;
+    z-index: 3;
+    .containerCardSingle2{
+        padding: 5%;
+        width: 80%;
+        background-color: rgba(1, 0, 8, 0.753);
+        border-radius: 30px;
+        color:white;
+        .containerImageCardSingle{
+            .imageCardSingle{
+                width: 500px;
+                border-radius: 30px;
+
+            }
+        }
+    }
+}
+
